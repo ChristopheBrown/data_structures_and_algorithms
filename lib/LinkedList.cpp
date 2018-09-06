@@ -77,7 +77,10 @@ public:
 
 	ListNode remove_front()
 	{
+		// Gets deleted at return, but is not what we need to delete
 		ListNode return_copy = *head;
+
+		//Pointer to head to delete what's stored at this address
 		ListNode *node_to_delete = head;
 		head = head->next;
 		delete node_to_delete;
