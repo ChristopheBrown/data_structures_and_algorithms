@@ -1,6 +1,6 @@
 
 # add files you create here
-OBJ = example.o
+OBJ = example.o LinkedList.o
 
 all: libece309.a
 
