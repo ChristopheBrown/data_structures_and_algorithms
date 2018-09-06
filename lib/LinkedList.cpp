@@ -28,6 +28,11 @@ class LinkedList
 public:
 	ListNode * head;
 
+	LinkedList()
+	{
+		head = new ListNode(0);
+	}
+
 	LinkedList( const char* str)
 	{
 		head = new ListNode(str);
