@@ -78,7 +78,6 @@ void PList::remove(iterator& it) { // counts beginning at zero
 
 	if (it.node->next == NULL) // tail node; sets iterator back to head when deleted.
 	{
-		printf("removing..\n");
 		delete it.node;
 		it.node=NULL;
 		return;
