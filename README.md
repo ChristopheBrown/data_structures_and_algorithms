@@ -20,9 +20,9 @@ ECE 498 Fall 2018
 *HOMEWORK 4*
 PList allows the user to implement a Linked List that can store strings, integers, and double values. 
 The PList offers members:
-  *head node
-	*iterator class {} with void increment(), P_node &getNode(), bool end()
-	*void append (int);
-	*void append (double);
-	*void append (const char*);
-	*void remove(iterator &it);
+ *head node
+*iterator class {} with void increment(), P_node &getNode(), bool end()
+*void append (int);
+*void append (double);
+*void append (const char*);
+*void remove(iterator &it);
