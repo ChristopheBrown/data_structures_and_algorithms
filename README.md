@@ -26,3 +26,16 @@ The PList offers members:
 * void append (double);
 * void append (const char*);
 * void remove(iterator &it);
+
+
+*HOMEWORK 5*
+Offers IntArray and IntegerSetArray support:
+IntArray is a class to explore the functionily of overriding methods that are created by the compiler. Of which include:
+*	IntArray& operator+=(const IntArray &rhs);
+*	IntArray operator+(const IntArray &rhs) const;
+*	IntArray operator-(const IntArray &rhs) const;
+*	IntArray operator*(int x) const;
+*	IntArray operator/(int x) const;
+*	ItArray operator<<(int count) const;
+*	operator char*() const;
+*	operator int() const;
