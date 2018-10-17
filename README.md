@@ -39,3 +39,6 @@ IntArray is a class to explore the functionily of overriding methods that are cr
 *	ItArray operator<<(int count) const;
 *	operator char*() const;
 *	operator int() const;
+
+*HOMEWORK 6*
+Includes functionality for IntegerSet as well as IntegerSetHT for hash table (with iterator) creation
