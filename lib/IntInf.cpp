@@ -11,6 +11,8 @@
 
 #include "IntInf.h"
 
+using namesapce ece309;
+
 IntInf::IntInf() {
 	setType(INDETERMINANT);
 	integer_data = 0;
