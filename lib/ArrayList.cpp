@@ -6,7 +6,7 @@
  */
 #include "ArrayList.h"
 
-using namesapce ece309::ArrayList;
+using namesapce ece309;
 
 #ifndef NULL
 #define NULL 0
