@@ -6,7 +6,7 @@
  */
 
 #include "P_node_double.h"
-
+using namesapce ece309;
 P_node_double::P_node_double(double num){
 	data = num;
 	next = NULL;
