@@ -6,7 +6,7 @@
  */
 
 #include "P_node_int.h"
-
+using namesapce ece309;
 P_node_int::P_node_int ( int num ) {
 	data = num;
 	next = NULL;
