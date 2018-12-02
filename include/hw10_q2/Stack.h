@@ -3,16 +3,20 @@
 
 #include "List.h"
 
-class Stack {
-private:
-  List list;
+namespace ece309 {
 
-public:
-  Stack() {}
-  void push(Item);
-  void pop();
-  Item &peek();
-  bool empty();
-};
+  class Stack {
+  private:
+    List list;
+
+  public:
+    Stack() {}
+    void push(Item);
+    void pop();
+    Item &peek();
+    bool empty();
+  };
+  
+}
 
 #endif // STACK_H
