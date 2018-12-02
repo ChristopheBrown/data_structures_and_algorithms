@@ -3,16 +3,19 @@
 
 #include "List.h"
 
-class Queue {
-private:
-  List list;
+namespace ece309 {
 
-public:
-  Queue() {}
-  void push(Item);
-  void pop();
-  Item& peek();
-  bool empty();
-};
+  class Queue {
+  private:
+    List list;
 
+  public:
+    Queue() {}
+    void push(Item);
+    void pop();
+    Item& peek();
+    bool empty();
+  };
+
+}
 #endif //QUEUE_H
