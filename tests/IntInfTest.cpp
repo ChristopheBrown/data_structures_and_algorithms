@@ -9,7 +9,7 @@
 #include <stdio.h>
 
 #include "IntInf.h"
-
+using namesapce ece309;
 int main (void) {
 	IntInf x(50);
 	IntInf y(10);
