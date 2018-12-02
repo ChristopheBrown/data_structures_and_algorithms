@@ -11,53 +11,55 @@
 #define POS_INF true
 #define NEG_INF false
 
-typedef enum {INTEGER, POSITIVE_INFINTY, NEGATIVE_INFINITY, INDETERMINANT} Type_t;
+namespace ece309 {
 
-class IntInf {
-private:
+	typedef enum {INTEGER, POSITIVE_INFINTY, NEGATIVE_INFINITY, INDETERMINANT} Type_t;
 
-	Type_t objectType;
-	int integer_data;
+	class IntInf {
+	private:
 
-	IntInf * null_object;
+		Type_t objectType;
+		int integer_data;
 
-public:
-	IntInf ();
-	IntInf (bool inf);
-	IntInf (int num);
+		IntInf * null_object;
 
-	Type_t getType();
-	int getInteger();
-	void setType(Type_t t, int num=0);
-	void setInteger(int num);
+	public:
+		IntInf ();
+		IntInf (bool inf);
+		IntInf (int num);
 
-	void setUpNullObject() {
-		*null_object=IntInf(0);
-		null_object->setType(INDETERMINANT);
-	}
-	bool checkForIntedterminant(Type_t t);
-	bool checkForIntegerData(Type_t t);
+		Type_t getType();
+		int getInteger();
+		void setType(Type_t t, int num=0);
+		void setInteger(int num);
 
-
-	IntInf& operator=(const int val);
-	IntInf& operator=(const IntInf & obj);
-	IntInf operator+(const IntInf & obj);
-	IntInf operator+(const int val);
-	IntInf operator-(const IntInf & obj);
-	IntInf operator-(const int val);
-	IntInf operator*(const IntInf & obj);
-	IntInf operator*(const int val);
-	IntInf operator/(const IntInf & obj);
-	IntInf operator/(const int val);
-	bool operator==(const IntInf & obj);
-	bool operator==(const int val);
-	bool operator>(const IntInf & obj);
-	bool operator>(const int val);
-	bool operator<(const IntInf & obj);
-	bool operator<(const int val);
-
-};
+		void setUpNullObject() {
+			*null_object=IntInf(0);
+			null_object->setType(INDETERMINANT);
+		}
+		bool checkForIntedterminant(Type_t t);
+		bool checkForIntegerData(Type_t t);
 
 
+		IntInf& operator=(const int val);
+		IntInf& operator=(const IntInf & obj);
+		IntInf operator+(const IntInf & obj);
+		IntInf operator+(const int val);
+		IntInf operator-(const IntInf & obj);
+		IntInf operator-(const int val);
+		IntInf operator*(const IntInf & obj);
+		IntInf operator*(const int val);
+		IntInf operator/(const IntInf & obj);
+		IntInf operator/(const int val);
+		bool operator==(const IntInf & obj);
+		bool operator==(const int val);
+		bool operator>(const IntInf & obj);
+		bool operator>(const int val);
+		bool operator<(const IntInf & obj);
+		bool operator<(const int val);
+
+	};
+
+}
 
 #endif /* INTINF_H_ */
