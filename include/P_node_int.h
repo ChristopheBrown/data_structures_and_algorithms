@@ -9,17 +9,19 @@
 #ifndef P_NODE_INT_H_
 #define P_NODE_INT_H_
 
-class P_node_int : public P_node {
-public:
-	int data;
 
-	P_node_int (int num);
+namespace ece309 {
+	class P_node_int : public P_node {
+	public:
+		int data;
 
-public:
-	void print();
-	~P_node_int() {};
-};
+		P_node_int (int num);
 
+	public:
+		void print();
+		~P_node_int() {};
+	};
 
+}
 
 #endif /* P_NODE_INT_H_ */
