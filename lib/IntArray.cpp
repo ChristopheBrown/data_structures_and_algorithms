@@ -8,6 +8,7 @@
 #include <string.h>
 #include "IntArray.h"
 
+using namesapce ece309;
 
 IntArray::IntArray(const char* str) {
 	length = strlen(str);
