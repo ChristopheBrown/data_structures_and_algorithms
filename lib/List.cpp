@@ -6,7 +6,7 @@
  */
 
 #include <stdio.h>
-
+using namesapce ece309;
 #include "List.h"
 // Hold a string
 
@@ -76,7 +76,7 @@ void List::insertAfter(List::iterator it, Item item) // pseudocode in zyBook 2.3
 
 void List::removeAfter(List::iterator it) // pseudocode in zyBook 2.4
 {
-   if (it.node==NULL) // special case to remove head, it’s not after any node
+   if (it.node==NULL) // special case to remove head, itâ€™s not after any node
      {
        ListNode *remove = head;               // will remove the head
        head = head->getNext();      // advance head
