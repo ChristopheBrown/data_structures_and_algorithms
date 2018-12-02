@@ -1,6 +1,7 @@
 #ifndef EXAMPLE_H
 #define EXAMPLE_H
 
-void example(void);
-
+namespace ece309 {
+  void example(void);
+}
 #endif //EXAMPLE_H
