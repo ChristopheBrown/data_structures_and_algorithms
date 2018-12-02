@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 #include "PList.h"
-
+using namesapce ece309;
 PList::PList() {
 	head = new P_node_int(0);
 }
