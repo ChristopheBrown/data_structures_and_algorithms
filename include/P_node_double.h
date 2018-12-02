@@ -9,17 +9,19 @@
 #ifndef P_NODE_DOUBLE_H_
 #define P_NODE_DOUBLE_H_
 
-class P_node_double : public P_node {
-public:
-	double data;
+namespace ece309 {
 
-	P_node_double ( double num );
+	class P_node_double : public P_node {
+	public:
+		double data;
 
-public:
-	void print();
-	~P_node_double() {};
-};
+		P_node_double ( double num );
 
+	public:
+		void print();
+		~P_node_double() {};
+	};
 
+}
 
 #endif /* P_NODE_DOUBLE_H_ */
