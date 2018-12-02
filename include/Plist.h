@@ -14,43 +14,46 @@
 #ifndef PLIST_H_
 #define PLIST_H_
 
-class PList {
-public:
-	P_node * head;
 
-	PList ();
-	PList (int);
-	PList (double);
-	PList (const char*);
+namespace ece309 {
+	
+	class PList {
+	public:
+		P_node * head;
 
-public:
-	class iterator {
-	private:
-		P_node * node;
+		PList ();
+		PList (int);
+		PList (double);
+		PList (const char*);
 
 	public:
-		iterator(P_node *n=NULL) { node = n; }
-		P_node &getNode() { return *node; } // P_node contains nothing, just a type. ->don't do this?
-//		void begin() { node = head; }
-		bool end() { return node == NULL; }
-		void increment(int n=1) { for(int i=0;i<n;i++) node = node->next; }
-//		void decrement() { P_node * index=node; begin(); while(node->next != index) increment(); }
+		class iterator {
+		private:
+			P_node * node;
 
-		friend class PList;
+		public:
+			iterator(P_node *n=NULL) { node = n; }
+			P_node &getNode() { return *node; } // P_node contains nothing, just a type. ->don't do this?
+	//		void begin() { node = head; }
+			bool end() { return node == NULL; }
+			void increment(int n=1) { for(int i=0;i<n;i++) node = node->next; }
+	//		void decrement() { P_node * index=node; begin(); while(node->next != index) increment(); }
+
+			friend class PList;
+		};
+
+
+	public:
+		iterator begin() { iterator it = iterator(head); return it; }
+		void append (int);
+		void append (double);
+		void append (const char*);
+
+		void remove(iterator &it);
+
+		~PList();
 	};
-
-
-public:
-	iterator begin() { iterator it = iterator(head); return it; }
-	void append (int);
-	void append (double);
-	void append (const char*);
-
-	void remove(iterator &it);
-
-	~PList();
-};
-
+}
 
 
 #endif /* PLIST_H_ */
