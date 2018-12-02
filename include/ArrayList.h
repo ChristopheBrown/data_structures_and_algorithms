@@ -13,24 +13,26 @@
 
 //typedef char* String;
 
-class ArrayList {
-	public:
-		char **string_list;
-		char *head;
+namespace ece309 {
+	
+	class ArrayList {
+		public:
+			char **string_list;
+			char *head;
 
-		int array_size;
-		int empty_spaces;
+			int array_size;
+			int empty_spaces;
 
-	public:
-//		ArrayList();
-		ArrayList(int);
-		void push_back(char[]);
-		char* get(int);
-		int length();
-		char* remove_front();
+		public:
+	//		ArrayList();
+			ArrayList(int);
+			void push_back(char[]);
+			char* get(int);
+			int length();
+			char* remove_front();
 
-		~ArrayList();
-};
-
+			~ArrayList();
+	};
+}
 
 #endif /* ARRAYLIST_H_ */
