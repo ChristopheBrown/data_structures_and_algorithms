@@ -9,17 +9,20 @@
 #ifndef P_NODE_STRING_H_
 #define P_NODE_STRING_H_
 
-class P_node_string : public P_node {
-public:
-	const char* data;
 
-	P_node_string ( const char* string );
+namespace ece309 {
+	
+	class P_node_string : public P_node {
+	public:
+		const char* data;
 
-public:
-	void print();
-	~P_node_string() {};
-};
+		P_node_string ( const char* string );
 
+	public:
+		void print();
+		~P_node_string() {};
+	};
+}
 
 
 #endif /* P_NODE_STRING_H_ */
