@@ -11,15 +11,18 @@
 #ifndef P_NODE_H_
 #define P_NODE_H_
 
-class P_node {
-public:
-	P_node * next;
 
-	virtual void print()=0;
+namespace ece309 {
+	
+	class P_node {
+	public:
+		P_node * next;
 
-	virtual ~P_node(){};
-};
+		virtual void print()=0;
 
+		virtual ~P_node(){};
+	};
 
+}
 
 #endif /* P_NODE_H_ */
