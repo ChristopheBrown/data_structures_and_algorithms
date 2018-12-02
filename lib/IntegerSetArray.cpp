@@ -6,7 +6,7 @@
  */
 
 #include "IntegerSetArray.h"
-
+using namesapce ece309;
 #define EMPTY -1
 
 
