@@ -6,7 +6,7 @@
  */
 
 #include "P_node_string.h"
-
+using namesapce ece309;
 P_node_string::P_node_string(const char* string) {
 	data = string;
 	next = NULL;
